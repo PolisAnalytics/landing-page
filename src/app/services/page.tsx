@@ -25,7 +25,6 @@ export default function ServicesPage() {
             </motion.p>
             <motion.div variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true, margin: '-100px'}} className={styles.solutions}>
                 <motion.article variants={variant}>
-                    
                     <motion.h4 variants={fadeUp}>Asesoría en Business intelligence</motion.h4>
                     <motion.p variants={fadeUp}>
                         Guiamos a empresas en el diseño e implementación de estrategias de análisis de datos para mejorar procesos,
