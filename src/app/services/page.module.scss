@@ -1,5 +1,4 @@
 .page {
-    // min-height: 100vh;
     height: auto;
     width: 100%;
     max-width: 155rem;
@@ -62,6 +61,7 @@
             flex-direction: column;
             padding: 0 8rem;
             margin: 12rem 0;
+
             span {
                 font-size: 3rem;
                 line-height: 3.8rem;
@@ -87,62 +87,100 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: justify;
+                min-height: 30rem;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                &:hover {
+                    img {
+                        filter: blur(0.9) brightness(50%);
+                    }
+                    h4, p {
+                        opacity: 1!important;
+                    }
+                }
+                img {
+                    object-fit: cover!important;   
+                    transition: all 0.3s ease-in-out;
+                }
 
                 h4 {
-                    font-size: 1.4rem;
+                    opacity: 0!important;
+                    font-size: 1.8rem;
                     line-height: 2rem;
                     color: #fff;
                     font-weight: 700;
                     margin-bottom: 3.2rem;
                     text-align: center;
+                    z-index: 99;
+                    transition: all 0.3s ease-in-out;
                 }
 
                 p {
+                    z-index: 99;
                     padding: 0;
                     margin: 0;
-                    font-size: 1.2rem;
+                    font-size: 1.6rem;
                     line-height: 1.8rem;
                     color: #fff;
+                    opacity: 0;
+                    transition: all 0.3s 0.1s ease-in-out;
+                    opacity: 0!important;
                 }
             }
         }
     }
-        @media screen and (max-width:1023px ) {
-    width: 100%;
-    padding: 0 1rem;
-    margin: 10rem auto 0;
-    h2,h3 {
-      margin-top: 4rem;
-      font-size: 2rem;
-      line-height: 2.6rem;
-      max-width: 100%;
-      padding: 0rem;
-    }
-    p {
-      width: 100%;
-      text-align: justify;
-      padding: 0;
-    }
-    .solutions_container {
-        margin-top: 5rem;
-      .solutions {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 3rem;
-        padding: 0;
-        article {
-            padding: 2rem;
-      }
-      }
-    
-      button {
-        margin: 6rem 0;
-        padding: 0 2rem;
-        span {
-            font-size: 1.6rem;
-            line-height: 2rem;
+
+    @media screen and (max-width:1023px) {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 10rem auto 0;
+
+        h2,
+        h3 {
+            margin-top: 4rem;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            max-width: 100%;
+            padding: 0rem;
         }
-      }
-      
+
+        p {
+            width: 100%;
+            text-align: justify;
+            padding: 0;
+        }
+
+        .solutions_container {
+            margin-top: 5rem;
+
+            .solutions {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 3rem;
+                padding: 0;
+
+                article {
+                    padding: 2rem;
+                    p, h4 {
+                        opacity: 1!important;
+                    }
+                    img {
+                        filter: blur(0.9) brightness(50%);
+                    }
+                }
+            }
+
+            button {
+                margin: 6rem 0;
+                padding: 0 2rem;
+
+                span {
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                }
+            }
+
+        }
     }
-  }
 }

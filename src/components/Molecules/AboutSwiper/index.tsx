@@ -16,7 +16,8 @@ export default function CustomSwiper() {
         pagination={true}
         breakpoints={{
             375: {
-                slidesPerView:1
+                slidesPerView:1,
+                initialSlide:1,
             },
             1024: {
                 slidesPerView:3
@@ -26,7 +27,7 @@ export default function CustomSwiper() {
         <SwiperSlide>
             <article className={styles.slide}>
                 <figure>
-                    <Image src={'/images/slide-1.jpg'} alt="image-slide" fill />
+                    <Image src={'/images/andres.png'} alt="image-slide" fill />
                 </figure>
                 <div className={styles.text}>
                 <h3>Andrés Suárez <br />CTO / Lead Developer</h3>
@@ -40,7 +41,7 @@ export default function CustomSwiper() {
         <SwiperSlide>
             <article className={`${styles.slide} ${styles.main}`}>
                 <figure>
-                    <Image src={'/images/slide-1.jpg'} alt="image-slide" fill />
+                    <Image src={'/images/lennin.png'} alt="image-slide" fill />
                 </figure>
                 <div className={styles.text}>
                     <h3>Lennin Arias <br/>Fundador / Director ejecutivo</h3>
@@ -54,7 +55,7 @@ export default function CustomSwiper() {
         <SwiperSlide>
             <article className={styles.slide}>
                 <figure>
-                    <Image src={'/images/slide-1.jpg'} alt="image-slide" fill />
+                    <Image src={'/images/diego.png'} alt="image-slide" fill />
                 </figure>
                 <div className={styles.text}>
                     <h3>Diego Moncada<br/>Creative Growth Lead</h3>

@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { variant, fadeUp } from "@/utils/animations";
 import styles from "./page.module.scss";
 import CustomSwiper from "@/components/Molecules/Swiper";
+import Image from "next/image";
 // import Link from "next/link";
 
 export default function ServicesPage() {
@@ -24,13 +25,16 @@ export default function ServicesPage() {
             </motion.p>
             <motion.div variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true, margin: '-100px'}} className={styles.solutions}>
                 <motion.article variants={variant}>
+                    
                     <motion.h4 variants={fadeUp}>Asesoría en Business intelligence</motion.h4>
                     <motion.p variants={fadeUp}>
                         Guiamos a empresas en el diseño e implementación de estrategias de análisis de datos para mejorar procesos,
                         visualizar información crítica y tomar decisiones basadas en evidencia, adaptando herramientas de BI a cada realidad organizacional.
                     </motion.p>
+                    <Image src={'/images/sq-1.jpg'} alt="background" fill />
                 </motion.article>
                 <motion.article variants={variant}>
+                    <Image src={'/images/sq-2.jpg'} alt="background" fill />
                     <motion.h4 variants={fadeUp}>Desarrollo de Software de Gestión y CRMs Adaptados.</motion.h4>
                     <motion.p variants={fadeUp}>
                         Creamos sistemas personalizados para la gestión operativa, seguimiento de clientes, procesos internos o control de
@@ -38,6 +42,7 @@ export default function ServicesPage() {
                     </motion.p>
                 </motion.article>
                 <motion.article variants={variant}>
+                    <Image src={'/images/sq-3.jpg'} alt="background" fill />
                     <motion.h4 variants={fadeUp}>Asesoría en Procesos de Modernización Organizacional.</motion.h4>
                     <motion.p variants={fadeUp}>
                         Acompañamos procesos de transformación institucional, digitalización y mejora continua. Integramos enfoques técnicos y estratégicos
