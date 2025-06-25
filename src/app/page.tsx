@@ -27,15 +27,15 @@ export default function Home() {
                 </motion.article>
                 <motion.article variants={variant} initial='initial' whileInView={'animate'}  viewport={{once: true, margin:"-150px"}}>
                     <motion.figure variants={fadeUp}>
-                    <Image src={'/images/2.png'} alt={'logo1'} fill/>
-                    </motion.figure>
-                    <motion.p variants={fadeUp}>Identificamos redes, actores y rutas delictivas mediante el cruce de datos, el análisis de vínculos y la construcción de tipologías. Esta trazabilidad permite entender la lógica operativa del crimen organizado y diseñar respuestas más eficaces, articuladas y estratégicas.</motion.p>
-                </motion.article>
-                <motion.article variants={variant} initial='initial' whileInView={'animate'}  viewport={{once: true, margin:"-150px"}}>
-                    <motion.figure variants={fadeUp}>
                     <Image src={'/images/3.png'} alt={'logo1'} fill/>
                     </motion.figure>
                     <motion.p variants={fadeUp}>Estudiamos el comportamiento delictivo en el territorio, identificando patrones geográficos, puntos calientes y zonas de riesgo. A través de mapas interactivos y herramientas geoespaciales, facilitando el diseño de estrategias focalizadas, optimizando el despliegue de recursos y la toma de decisiones basadas en evidencia territorial.</motion.p>
+                </motion.article>1
+                <motion.article variants={variant} initial='initial' whileInView={'animate'}  viewport={{once: true, margin:"-150px"}}>
+                    <motion.figure variants={fadeUp}>
+                    <Image src={'/images/2.png'} alt={'logo1'} fill/>
+                    </motion.figure>
+                    <motion.p variants={fadeUp}>Identificamos redes, actores y rutas delictivas mediante el cruce de datos, el análisis de vínculos y la construcción de tipologías. Esta trazabilidad permite entender la lógica operativa del crimen organizado y diseñar respuestas más eficaces, articuladas y estratégicas.</motion.p>
                 </motion.article>
                 <motion.article variants={variant} initial='initial' whileInView={'animate'}  viewport={{once: true, margin:"-150px"}}>
                     <motion.figure variants={fadeUp}>
