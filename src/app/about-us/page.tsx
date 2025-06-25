@@ -5,7 +5,7 @@ import styles from "./page.module.scss";
 import CustomSwiper from "@/components/Molecules/AboutSwiper";
 export default function AboutUsPage() {
     return (<motion.main variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true}} className={styles.page}>
-        <motion.h2 variants={fadeUp}>¿Qué nos motiva</motion.h2>
+        <motion.h2 variants={fadeUp}>¿Qué nos motiva?</motion.h2>
         <motion.p variants={fadeUp}>
             La inseguridad y la violencia representan uno de los principales desafíos para el desarrollo de América Latina, afectando de forma directa la vida cotidiana, el tejido social y la confianza ciudadana. Sin embargo, muchos gobiernos locales y actores territoriales aún enfrentan enormes limitaciones institucionales para acceder a herramientas modernas que permitan comprender y responder de forma oportuna a estas amenazas. 
             <br /><br />
@@ -13,10 +13,7 @@ export default function AboutUsPage() {
         </motion.p>
         <motion.section variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true, margin: '-200px'}} className={styles.mission}>
             <motion.p variants={variant}>
-                <motion.strong variants={fadeUp}>Misión:</motion.strong> Impulsar la Inteligencia territorial para la seguridad en América Latina a través del uso de tecnología y análisis de
-                datos en la gestión de la seguridad y gestión pública, sector privado, y Organizaciones de la Sociedad Civil, proporcionando herramientas accesibles
-                y eficientes para gobiernos locales y territorios rurales, fortaleciendo  las capacidades institucionales, mejorar la toma de decisiones y promover la
-                transparencia, generando información confiable que permita prevenir y reducir la violencia y el crimen organizado en América Latina.
+                <motion.strong variants={fadeUp}>Misión:</motion.strong> Impulsar la Inteligencia territorial para la seguridad en América Latina a través del uso de tecnología y análisis de datos en la gestión de la seguridad y gestión pública, sector privado, y Organizaciones de la Sociedad Civil, proporcionando herramientas accesibles y eficientes para gobiernos locales y territorios rurales, fortaleciendo  las capacidades institucionales.
             </motion.p>
             <motion.p variants={variant}>
                 <motion.strong variants={fadeUp}>Visión:</motion.strong> Consolidar una plataforma a nivel regional en soluciones tecnológicas para la seguridad pública y construir un ecosistema
