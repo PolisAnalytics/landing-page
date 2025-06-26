@@ -55,10 +55,12 @@
         figure {
           position: relative;
           width: 100%;
-          height: 8rem;
+          height: 10rem;
           margin-bottom: 2rem;
           img {
             object-fit: contain!important;
+            margin: 0 auto;
+            max-width: 20rem;
           }
         }
         p {
@@ -211,6 +213,7 @@ a.secondary {
 
 @media (max-width: 600px) {
   .page {
+    padding: 0 1rem;
   }
 
   .main {
