@@ -17,7 +17,28 @@ const sourcePro = Source_Code_Pro({
 
 export const metadata: Metadata = {
   title: "Polis Analytics",
-  description: "Gestion y monitoreo de datos",
+  description: "Polís Analytics ofrece soluciones tecnológicas para la gestión local de la seguridad en América Latina. Datos, mapas y predicción del delito al alcance de todos.",
+  openGraph: {
+    title: "Polis Analytics",
+    description: "Polís Analytics ofrece soluciones tecnológicas para la gestión local de la seguridad en América Latina. Datos, mapas y predicción del delito al alcance de todos.",
+    siteName: "Polis Analytics",
+    images: [
+      {
+        url: "/images/metaimage.jpg", // Image from public folder
+        width: 1200,
+        height: 630,
+        alt: "Polis Analytics",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Polis Analytics",
+    description: "Polís Analytics ofrece soluciones tecnológicas para la gestión local de la seguridad en América Latina. Datos, mapas y predicción del delito al alcance de todos.",
+    images: ["/images/metaimage.jpg"], // Same image for Twitter
+  },
 };
 
 export default function RootLayout({

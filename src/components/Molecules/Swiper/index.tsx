@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 const list = [
     {
-        image: '1-services.png',
+        image: 'slide-1.jpg',
         video: false,
         title: 'Análisis de datos para diagnóstico y toma de decisiones.',
         text: 'Nuestros tableros permiten visualizar y analizar datos delictivos de forma clara y dinámica, facilitando diagnósticos precisos en materia de seguridad. Integran indicadores clave, mapas interactivos y comparativos temporales que ayudan a autoridades y equipos técnicos a tomar decisiones basadas en evidencia, optimizando recursos y focalizando estrategias en los territorios más vulnerables.'
@@ -38,6 +38,9 @@ export default function CustomSwiper() {
         modules={[Pagination, Navigation]}
         slidesPerView={1}
         pagination={true}
+        navigation={{
+            enabled: true,
+        }}
     >
         {
             list.map((slide,idx) => <SwiperSlide key={idx}>

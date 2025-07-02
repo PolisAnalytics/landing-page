@@ -1,4 +1,5 @@
 'use client'
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { variant, fadeUp } from "@/utils/animations";
 import styles from "./page.module.scss";
@@ -7,6 +8,10 @@ import Image from "next/image";
 // import Link from "next/link";
 
 export default function ServicesPage() {
+    const [on, setOn]= useState<boolean>(false);
+        useEffect(() => {
+            setOn(true);
+        },[on])
     return (<motion.main variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true}} className={styles.page}>
         <motion.h2 variants={fadeUp}>Seguridad y Gestión Pública</motion.h2>
         <motion.p variants={fadeUp}>

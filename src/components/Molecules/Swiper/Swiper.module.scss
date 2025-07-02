@@ -43,7 +43,6 @@
     .text {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         h3, p {
             font-size: 1.8rem;
             line-height: 2.2rem;
@@ -56,7 +55,7 @@
         }
         h3 {
             font-weight: 900;
-            margin: 5rem 0;
+            margin: 0.5rem 0 5rem;
                 text-shadow: 0 0 1rem #9da416, 0 0 0.2rem #9da416;
         }
 

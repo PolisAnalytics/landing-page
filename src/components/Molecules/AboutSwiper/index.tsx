@@ -32,8 +32,7 @@ export default function CustomSwiper() {
                 <div className={styles.text}>
                 <h3>Andrés Suárez <br />CTO / Lead Developer</h3>
                 <p>
-                    Fullstack developer especializado en desarrollo Front-end, manejo  y evaluacion de equipo, 
-                    soluciones tecnologicas, mantenimiento y optimizacion para los distintos productos.
+                    Fullstack Developer especializado en desarrollo Front-end, manejo y evaluación de equipo, soluciones tecnológicas, mantenimiento y optimización para los distintos productos
                 </p>
                     </div>
             </article>
@@ -60,8 +59,7 @@ export default function CustomSwiper() {
                 <div className={styles.text}>
                     <h3>Diego Moncada<br/>Creative Growth Lead</h3>
                     <p>
-                        Abogado, especialista en seguridad pública, maestrando en políticas públicas, analista de datos.
-                        Con experiencia en gestión de proyectos comunitarios e inicitativas privadas
+                        Especialista en branding, UX/UI y campañas digitales. Desarrollo de identidades visuales, contenido estratégico y crecimiento orgánico basado en métricas.
                     </p>
                 </div>
             </article>

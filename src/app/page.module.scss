@@ -83,13 +83,14 @@
       font-size: 3.5rem;
       line-height: 4rem;
       text-align: center;
+      white-space: nowrap;
       max-width: 60%;
       font-weight: 700;
       font-family: var(--font-montserrat);
       color: #d64b4e;
       text-shadow: 
-        0 0 5px #bb070a,
-        0 0 40px #bb070a;
+        0 0 5px #bb070a81,
+        0 0 40px #bb070a8a;
       padding: 0 10rem;
     }
     @media screen and (max-width:1023px ) {
@@ -100,6 +101,7 @@
       line-height: 2.6rem;
       max-width: 100%;
       padding: 0rem;
+      white-space: wrap;
     }
     p {
       width: 100%;
