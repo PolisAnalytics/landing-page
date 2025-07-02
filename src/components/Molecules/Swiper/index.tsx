@@ -47,7 +47,7 @@ export default function CustomSwiper() {
             <article className={styles.slide}>
                 <figure>
                     {
-                        slide.video ? <video src={`/images/${slide.image}`} muted autoPlay loop /> : <Image src={`/images/${slide.image}`} alt="image-slide" fill />
+                        slide.video ? <video src={`/images/${slide.image}`} muted autoPlay loop playsInline/> : <Image src={`/images/${slide.image}`} alt="image-slide" fill />
                     }
                     
                 </figure>
