@@ -7,7 +7,6 @@ import { fadeUp, variant } from "@/utils/animations";
 
 export default function HomeSection() {
   return (
-    <div className={styles.page}>
       <motion.main className={styles.main}>
         <VideoBanner />
         <motion.section variants={variant} initial='initial' whileInView={'animate'} viewport={{ once: true, margin: "-200px" }} className={styles.services} >
@@ -46,6 +45,5 @@ export default function HomeSection() {
           </motion.div>
         </motion.section>
       </motion.main>
-    </div>
   );
 }
