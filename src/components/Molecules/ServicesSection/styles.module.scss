@@ -1,0 +1,192 @@
+.page {
+    height: auto;
+    width: 100%;
+    max-width: 155rem;
+    margin: 30rem auto 0;
+    --swiper-pagination-color: #fff;
+    --swiper-pagination-bullet-inactive-color: #bebabafd;
+    --swiper-pagination-bottom: -5rem;
+    --swiper-navigation-top-offset: 110%;
+    --swiper-navigation-sides-offset: 40%;
+    --swiper-navigation-size: 3.6rem;    
+    --swiper-navigation-color: #fff;
+    h2,
+    h3 {
+        width: auto;
+        text-align: center;
+        margin-top: 8rem;
+        font-size: 3.8rem;
+        line-height: 4rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 60%;
+        font-weight: 700;
+        font-family: var(--font-montserrat);
+        color: #d64b4e;
+        text-shadow:
+            0 0 5px #bb070a81,
+            0 0 40px #bb070a7c;
+        padding: 0 10rem;
+        padding-top: 6rem;
+    }
+
+    h3 {
+        color: #d1d848;
+        text-shadow:
+            0 0 5px #9da416,
+            0 0 40px #9da416;
+    }
+
+    p {
+        color: #fff;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin-top: 6rem;
+
+        padding: 0 20rem;
+    }
+
+
+    .solutions_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 12rem;
+
+        button {
+            width: 100%;
+            max-width: 120rem;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 8rem;
+            margin: 12rem 0;
+
+            span {
+                font-size: 3rem;
+                line-height: 3.8rem;
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .solutions {
+            width: 100%;
+            height: auto;
+            padding: 0 20rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8rem;
+            margin-top: 3.2rem;
+
+            article {
+                border: 0.2rem solid #fff;
+                border-radius: 3.8rem;
+                padding: 1.2rem 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: justify;
+                min-height: 30rem;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                &:hover {
+                    img {
+                        filter: blur(0.9rem) brightness(50%)!important;
+                    }
+                    h4, p {
+                        opacity: 1!important;
+                    }
+                }
+                img {
+                    object-fit: cover!important;   
+                    filter: none!important;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                h4 {
+                    opacity: 0!important;
+                    font-size: 1.8rem;
+                    line-height: 2rem;
+                    color: #fff;
+                    font-weight: 700;
+                    margin-bottom: 3.2rem;
+                    text-align: center;
+                    z-index: 99;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                p {
+                    z-index: 99;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1.6rem;
+                    line-height: 1.8rem;
+                    color: #fff;
+                    opacity: 0;
+                    transition: all 0.3s 0.1s ease-in-out;
+                    opacity: 0!important;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1023px) {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 10rem auto 0;
+        --swiper-navigation-top-offset: 105%;
+        --swiper-navigation-sides-offset: 20%;
+        --swiper-navigation-size: 2.6rem;
+        h2,
+        h3 {
+            margin-top: 4rem;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            max-width: 100%;
+            padding: 0rem;
+        }
+
+        p {
+            width: 100%;
+            text-align: justify;
+            padding: 0;
+        }
+
+        .solutions_container {
+            margin-top: 5rem;
+
+            .solutions {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 3rem;
+                padding: 0;
+
+                article {
+                    padding: 2rem;
+                    p, h4 {
+                        opacity: 1!important;
+                    }
+                    img {
+                        filter: blur(0.9rem) brightness(50%)!important;
+                    }
+                }
+            }
+
+            button {
+                margin: 6rem 0;
+                padding: 0 2rem;
+
+                span {
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                }
+            }
+
+        }
+    }
+}
