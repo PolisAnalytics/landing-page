@@ -55,6 +55,7 @@
         width: 100%;
         height: auto;
         margin-top: 12rem;
+        position: relative;
 
         button {
             width: 100%;
@@ -82,6 +83,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 8rem;
             margin-top: 3.2rem;
+            position: relative;
 
             article {
                 border: 0.2rem solid #fff;
