@@ -13,7 +13,7 @@ export default function ServicesSection(){
             Desarrollamos herramientas tecnológicas que integran fuentes públicas, datos abiertos y análisis territorial para fortalecer capacidades estatales, conectar comunidades con las instituciones y promover una seguridad más humana, basada en evidencia.
         </motion.p>
         <CustomSwiper />
-        <motion.section variants={variant} initial='initial' whileInView={'animate'} viewport={{ once: true, margin:'-200px'}} className={styles.solutions_container}>
+        <motion.section variants={variant} initial='initial' whileInView={'animate'} viewport={{ once: true, margin:'-100px'}} className={styles.solutions_container}>
             <motion.h3 variants={fadeUp}>Soluciones destinadas<br/> al Sector privado</motion.h3>
             <motion.p variants={fadeUp}>
                 En Polís Analytics acompañamos a empresas en sus procesos de transformación digital mediante soluciones
