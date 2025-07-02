@@ -9,7 +9,7 @@ export default function HomeSection() {
   return (
       <motion.main className={styles.main}>
         <VideoBanner />
-        <motion.section variants={variant} initial='initial' whileInView={'animate'} viewport={{ once: true, margin: "-200px" }} className={styles.services} >
+        <motion.section variants={variant} initial='initial' whileInView={'animate'} viewport={{ once: true, margin: "-100px" }} className={styles.services} >
           <motion.p variants={fadeUp}>
             América Latina concentra la tasa de homicidios más alta del mundo desde hace dos décadas. Con solo el 8% de la población global, la región registra más del 33% de los homicidios, alcanzando tasas superiores a 20 por cada 100 mil habitantes. Esta realidad la convierte en una de las zonas más violentas del planeta.<br /><br />
             En este contexto, la expansión del Crimen Organizado Transnacional y la fragmentación institucional han planteado retos profundos para los Estados, especialmente en territorios rurales y periféricos. La adaptación de las instituciones a nuevas dinámicas sociales, territoriales y tecnológicas se vuelve indispensable para enfrentar los desafíos actuales de la seguridad pública.<br /><br />
@@ -17,7 +17,7 @@ export default function HomeSection() {
           </motion.p>
           <motion.h2 variants={fadeUp} className={styles.title}>Nuestro Enfoque de Trabajo:<br/> Entendemos el Fenómeno para Transformar Territorios</motion.h2>
 
-          <motion.div variants={variant} initial='initial' whileInView={'animate'} viewport={{ once: true, margin: "-250px" }} className={styles.display}>
+          <motion.div variants={variant} initial='initial' whileInView={'animate'} viewport={{ once: true, margin: "-150px" }} className={styles.display}>
             <motion.article variants={variant} initial='initial' whileInView={'animate'} viewport={{ once: true, margin: "-150px" }}>
               <motion.figure variants={fadeUp}>
                 <Image src={'/images/1.png'} alt={'logo1'} fill />
