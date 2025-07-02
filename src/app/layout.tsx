@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Source_Code_Pro } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/Organisms/Header";
-import Footer from "@/components/Organisms/Footer";
+
 
 
 const montserrat = Montserrat({
@@ -51,7 +51,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} ${sourcePro.variable}`}>
       <Header />
         {children}
-        <Footer />
+        
       </body>
     </html>
   );

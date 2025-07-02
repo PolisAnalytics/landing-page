@@ -131,6 +131,7 @@ body {
   font-weight: 400;
   height: 100%;
   position: relative;
+  
   &.hasScrollbar {
     overflow: hidden;
     height: 100vh;
@@ -194,7 +195,9 @@ body {
   // --swiper-pagination-color: #fff;
 }
 .swiper {
-  overflow: visible!important;
+  padding: 10rem 0!important;
+  // overflow: visible!important;
+  // overflow-x: hidden!important;
 }
 .swiper-button-prev, .swiper-button-next {
   z-index: 11;
