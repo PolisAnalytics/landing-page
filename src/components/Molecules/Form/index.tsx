@@ -21,7 +21,7 @@ const [state, formAction, isPending] = useActionState(sendFooterEmail, initialSt
 const getInput = (e: ChangeEvent<HTMLInputElement> ) => {
     setFormBody({...formBody, [e.target.name]: e.target.value})
 }
-    return <motion.form variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true, margin:'-250px'}} className={styles.form} action={formAction}>
+    return <motion.form variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true, margin:'-150px'}} className={styles.form} action={formAction}>
         <Input title="Nombre" name="name" onChange={getInput} />
         <Input title="Organización" name="organization" onChange={getInput} />
         <Input title="Correo electrónico" name="email" onChange={getInput} />
