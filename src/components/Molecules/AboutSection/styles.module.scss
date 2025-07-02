@@ -1,0 +1,114 @@
+.page {
+    // min-height: 100vh;
+    height: auto;
+    width: 100%;
+    max-width: 155rem;
+    margin: 30rem auto 0;
+    --swiper-pagination-color: #fff;
+    --swiper-pagination-bullet-inactive-color: #b8b8b8;
+    --swiper-pagination-bottom: -5rem;
+    text-align: justify;
+
+    h2,
+    h3 {
+        width: auto;
+        text-align: center;
+        margin-top: 8rem;
+        font-size: 3.8rem;
+        line-height: 4rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 60%;
+        font-weight: 700;
+        font-family: var(--font-montserrat);
+        color: #d64b4e;
+        text-shadow:
+            0 0 5px #bb070a7c,
+            0 0 40px #bb070a81;
+        padding: 0 10rem;
+        padding-top: 6rem;
+    }
+
+    p {
+        color: #fff;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin-top: 6rem;
+        padding: 0 20rem;
+    }
+    .mission {
+        width: 100%;
+        height: auto;
+        padding: 2.6rem 20rem;
+        // border-top:0.4rem solid #bb070a;
+        // border-bottom:0.4rem solid #bb070a;
+        position: relative;
+        margin-top: 6rem;
+
+        &::before {
+            content: '';
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 0.4rem;
+            background: #bb070a;
+            top:-3rem;
+            left: 0;
+
+        }
+        &:after {
+            content: '';
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 0.4rem;
+            background: #bb070a;
+            bottom: -3rem;
+            left: 0;
+        }
+        
+        p {
+            padding: 0 2rem;
+            &:first-of-type{
+                margin-top: 0;
+            }
+        }
+    }
+
+    .team {
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        max-width: 140rem;
+        h3 {
+            margin-bottom: 10rem;
+            @media screen and (max-width:1023px) {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+    @media screen and (max-width:1023px ) {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 10rem auto 0;
+        .mission {
+            padding: 0;
+        }
+        .team {
+            margin-bottom: 8rem;
+            margin-top: 8rem;
+        }
+        h2, h3 {
+          margin-top: 4rem;
+          font-size: 2rem;
+          line-height: 2.6rem;
+          max-width: 100%;
+          padding: 0rem;
+        }
+        p {
+          width: 100%;
+          text-align: justify;
+          padding: 0;
+        }
+    }
+}
