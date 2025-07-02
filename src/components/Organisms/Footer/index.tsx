@@ -6,7 +6,7 @@ import Form from "@/components/Molecules/Form";
 import { MdOutlineWhatsapp, MdEmail, MdLocationOn } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 export default function Footer() {
-    return <motion.footer variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true, margin:'-250px'}} id="footer" className={styles.footer}>
+    return <motion.footer variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true, margin:'-150px'}} id="footer" className={styles.footer}>
         <motion.section variants={variant}>
             <motion.h5 variants={fadeUp}>Contáctanos</motion.h5>
             <motion.p variants={fadeUp}>Si tienes alguna duda de nuestras propuestas, puedes escribirnos</motion.p>
