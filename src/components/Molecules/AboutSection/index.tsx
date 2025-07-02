@@ -11,7 +11,7 @@ export default function AboutUsSection() {
             <br /><br />
             En Polis Analytics, nos mueve la convicción de que es posible revertir esta realidad. Apostamos a la conectividad como vía estratégica para cerrar brechas, articular actores y generar información útil que permita entender las dinámicas delictivas en su complejidad. Creemos que, con tecnología accesible y un enfoque integral, es posible acompañar a los territorios en la construcción de soluciones sostenibles y centradas en las personas.
         </motion.p>
-        <motion.section variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true, margin: '-200px'}} className={styles.mission}>
+        <motion.section variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true, margin: '-100px'}} className={styles.mission}>
             <motion.p variants={variant}>
                 <motion.strong variants={fadeUp}>Misión:</motion.strong> Impulsar la Inteligencia territorial para la seguridad en América Latina a través del uso de tecnología y análisis de datos en la gestión de la seguridad y gestión pública, sector privado, y Organizaciones de la Sociedad Civil, proporcionando herramientas accesibles y eficientes para gobiernos locales y territorios rurales, fortaleciendo  las capacidades institucionales.
             </motion.p>
