@@ -196,3 +196,6 @@ body {
 .swiper {
   overflow: visible!important;
 }
+.swiper-button-prev, .swiper-button-next {
+  z-index: 11;
+}

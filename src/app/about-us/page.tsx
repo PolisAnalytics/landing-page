@@ -1,9 +1,14 @@
 'use client'
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { variant, fadeUp } from "@/utils/animations";
 import styles from "./page.module.scss";
 import CustomSwiper from "@/components/Molecules/AboutSwiper";
 export default function AboutUsPage() {
+    const [on, setOn]= useState<boolean>(false);
+    useEffect(() => {
+        setOn(true);
+    },[on])
     return (<motion.main variants={variant} initial='initial' whileInView={'animate'} viewport={{once: true}} className={styles.page}>
         <motion.h2 variants={fadeUp}>¿Qué nos motiva?</motion.h2>
         <motion.p variants={fadeUp}>

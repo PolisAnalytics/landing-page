@@ -1,4 +1,5 @@
 'use client'
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import styles from "./page.module.scss";
@@ -6,6 +7,10 @@ import VideoBanner from "@/components/Atoms/Banner";
 import { fadeUp, variant } from "@/utils/animations";
 
 export default function Home() {
+  const [on, setOn]= useState<boolean>(false);
+      useEffect(() => {
+          setOn(true);
+      },[on])
   return (
     <div className={styles.page}>
       <motion.main className={styles.main}>
@@ -16,7 +21,7 @@ export default function Home() {
             En este contexto, la expansión del Crimen Organizado Transnacional y la fragmentación institucional han planteado retos profundos para los Estados, especialmente en territorios rurales y periféricos. La adaptación de las instituciones a nuevas dinámicas sociales, territoriales y tecnológicas se vuelve indispensable para enfrentar los desafíos actuales de la seguridad pública.<br /><br />
             Las Tecnologías de la Información (TI) ofrecen una oportunidad estratégica para fortalecer las capacidades institucionales, mejorar la gestión de recursos y diseñar políticas basadas en evidencia. El análisis de datos, los sistemas inteligentes de prevención, la automatización de procesos, y sobre todo, la conectividad, permiten tomar decisiones más informadas, aumentar la eficiencia y responder con mayor precisión a la complejidad del fenómeno criminal.<br /><br />
           </motion.p>
-          <motion.h2 variants={fadeUp} className={styles.title}>Nuestro Enfoque de Trabajo: Entendemos el Fenómeno para Transformar Territorios</motion.h2>
+          <motion.h2 variants={fadeUp} className={styles.title}>Nuestro Enfoque de Trabajo:<br/> Entendemos el Fenómeno para Transformar Territorios</motion.h2>
 
           <motion.div variants={variant} initial='initial' whileInView={'animate'} viewport={{ once: true, margin: "-250px" }} className={styles.display}>
             <motion.article variants={variant} initial='initial' whileInView={'animate'} viewport={{ once: true, margin: "-150px" }}>

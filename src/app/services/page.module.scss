@@ -6,7 +6,10 @@
     --swiper-pagination-color: #fff;
     --swiper-pagination-bullet-inactive-color: #bebabafd;
     --swiper-pagination-bottom: -5rem;
-
+    --swiper-navigation-top-offset: 110%;
+    --swiper-navigation-sides-offset: 40%;
+    --swiper-navigation-size: 3.6rem;    
+    --swiper-navigation-color: #fff;
     h2,
     h3 {
         width: auto;
@@ -21,8 +24,8 @@
         font-family: var(--font-montserrat);
         color: #d64b4e;
         text-shadow:
-            0 0 5px #bb070a,
-            0 0 40px #bb070a;
+            0 0 5px #bb070a81,
+            0 0 40px #bb070a7c;
         padding: 0 10rem;
         padding-top: 6rem;
     }
@@ -137,7 +140,9 @@
         width: 100%;
         padding: 0 1rem;
         margin: 10rem auto 0;
-        
+        --swiper-navigation-top-offset: 105%;
+        --swiper-navigation-sides-offset: 20%;
+        --swiper-navigation-size: 2.6rem;
         h2,
         h3 {
             margin-top: 4rem;
