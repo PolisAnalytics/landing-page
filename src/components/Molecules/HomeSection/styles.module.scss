@@ -98,6 +98,7 @@
     }
     @media screen and (max-width:1023px ) {
     width: 100%;
+    padding: 0 1.6rem;
     h2 {
       margin-top: 4rem;
       font-size: 2rem;
@@ -125,7 +126,7 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 1023px) {
   .page {
     padding: 0 1rem;
   }

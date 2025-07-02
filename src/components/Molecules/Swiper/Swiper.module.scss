@@ -17,6 +17,7 @@
         padding: 1.6rem;
         border: 0.3rem solid #fff;
         overflow: hidden;
+        pointer-events: none;
         
         video {
             border: 0.1rem solid #fff;
@@ -28,6 +29,7 @@
             transform: translate(-50%,-50%);
             border-radius: 3rem;
             object-fit: cover;
+            pointer-events: none;
         }
         img {
             border: 0.1rem solid #fff !important;
