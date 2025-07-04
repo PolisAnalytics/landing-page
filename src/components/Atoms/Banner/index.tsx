@@ -14,9 +14,8 @@ export default function VideoBanner() {
             muted
             playsInline
             className={styles.video_background}
-        >
-            <source src="/images/video-background.mp4" type="video/mp4" />
-        </video>
+            src="/images/video-background.mp4" 
+        />
         <motion.p variants={fadeUp}  className={styles.light_green}>Datos en el territorio</motion.p>
         <motion.p variants={fadeUp}  className={styles.light_white}>Bienvenido a Polis Analytics <br />
             Inteligencia territorial para la seguridad en América Latina.
