@@ -32,7 +32,7 @@ export default function CustomSwiper() {
                 <div className={styles.text}>
                 <h3>Andrés Suárez <br />CTO / Lead Developer</h3>
                 <p>
-                    Fullstack Developer especializado en desarrollo Front-end, manejo y evaluación de equipo, soluciones tecnológicas, mantenimiento y optimización para los distintos productos
+                    Fullstack Developer especializado en desarrollo Front-end, manejo y evaluación de equipo, soluciones tecnológicas, mantenimiento y optimización para los distintos productos.
                 </p>
                     </div>
             </article>
@@ -46,7 +46,7 @@ export default function CustomSwiper() {
                     <h3>Lennin Arias <br/>Fundador / Director ejecutivo</h3>
                     <p>
                         Abogado, especialista en seguridad pública, maestrando en políticas públicas, analista de datos.
-                        Con experiencia en gestión de proyectos comunitarios e inicitativas privadas
+                        Con experiencia en gestión de proyectos comunitarios e iniciativas privadas.
                     </p>
                 </div>
             </article>
