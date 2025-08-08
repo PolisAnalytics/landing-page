@@ -40,7 +40,7 @@ export default function CustomSwiper() {
         <SwiperSlide>
             <article className={`${styles.slide} ${styles.main}`}>
                 <figure>
-                    <Image src={'/images/lennin.png'} alt="image-slide" fill />
+                    <Image src={'/images/lennin.jpg'} alt="image-slide" fill />
                 </figure>
                 <div className={styles.text}>
                     <h3>Lennin Arias <br/>Fundador / Director ejecutivo</h3>
