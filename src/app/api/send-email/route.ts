@@ -33,6 +33,6 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ success: true });
   } catch (error){
-    return NextResponse.json({ success: false, error, name: process.env.password }, { status: 500 });
+    return NextResponse.json({ success: false, error }, { status: 500 });
   }
 }
