@@ -20,7 +20,7 @@ export default function Footer() {
                             <a target="_blank" href="https://wa.me/+5491169961434?text=Hola Polis">+54 9 11 6996-1434</a>
                         </motion.li>
                         <motion.li variants={fadeUp}><MdEmail className={styles.icon} />
-                            <a target="_blank" href="mailto:info@aolisanalytics.com">info@polisanalytics.com</a>
+                            <a target="_blank" href="mailto:info@polisanalytics.com">info@polisanalytics.com</a>
                         </motion.li>
                         <motion.li variants={fadeUp}><FaLinkedin className={styles.icon} />
                             <a target="_blank" href="https://www.linkedin.com/company/polis-analytics/">Polis Analytics</a>
