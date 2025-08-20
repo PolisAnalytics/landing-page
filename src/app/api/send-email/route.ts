@@ -7,8 +7,8 @@ export async function POST(req: NextRequest) {
 
   const transporter = nodemailer.createTransport({
     host: "smtp.zoho.com",
-    port: 465,
-    secure: true, // true para puerto 465, false para 587
+    port: 587,
+    secure: false, // true para puerto 465, false para 587
     auth: {
       user: process.env.email,
       pass: process.env.password,
@@ -33,6 +33,6 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ success: true });
   } catch (error){
-    return NextResponse.json({ success: false, error }, { status: 500 });
+    return NextResponse.json({ success: false, error, name: process.env.password }, { status: 500 });
   }
 }
